@@ -49,13 +49,13 @@ INSTALLED_APPS = [
 ]
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-SEND_GRID_API_KEY = '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'
+SEND_GRID_API_KEY = 'your sendgrid api key'
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ubaidparvaiz'
-EMAIL_HOST_PASSWORD = '.py/r^admin1'
+EMAIL_HOST_USER = 'your sendgrid name'
+EMAIL_HOST_PASSWORD = 'your sendgrid password'
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'ubaidparvez4@gmail.com'
+DEFAULT_FROM_EMAIL = 'your sendgrid email'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 MIDDLEWARE = [
