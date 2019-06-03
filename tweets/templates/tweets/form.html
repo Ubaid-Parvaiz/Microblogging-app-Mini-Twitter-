@@ -1,0 +1,9 @@
+ {% load crispy_forms_tags %}
+ 
+<form method='POST' enctype="multipart/form-data" class = 'tweet-form' action="{% url 'search' %}">
+   {% csrf_token %}
+   <div class="div">
+    {{form.as_p}}
+    <input class='btn btn-info' type="submit" value="{{ btn_title }}"/>
+    </div>
+</form>

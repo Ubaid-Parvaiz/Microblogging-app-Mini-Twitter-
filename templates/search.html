@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block script %}
+
+<script type="text/javascript">
+
+ $(document).ready(function(){
+
+ loadTweetContainer('tweet-container',)
+
+ });	
+
+</script>
+
+
+  
+{% endblock script %}
+
+{% block content %}
+
+<div class="container">
+
+	{% include "tweets/search_form.html" %}
+
+
+
+	<div class="row">
+
+		<div class="col-sm-9 pt-4">
+			<p class="lead text-info">Tweets</p>
+			
+			<div id="tweet-container" data-id = "api/search/"></div>
+
+		</div>
+
+
+		<a href="#" id="loadmore">Load more tweets</a>
+		
+	
+
+
+		<div class="col-sm-3 pt-4 col-xs-12 text-info">
+			<p class="lead text-black">Users</p>
+			{% for i in user %}
+			<a href="/{{i.username}}/">{{i.username}}</a><br>
+			{% endfor %}
+		</div>
+
+
+	</div>
+</div>
+
+{% endblock %}
